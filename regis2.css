@@ -1,0 +1,67 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 450px;
+    padding: 30px; 
+    width: 44%;
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+.mainheading {
+    color: #16a159; 
+    text-align: center;
+
+}
+
+.paragraph {
+    background-color: #d8ede2; 
+    text-align: center; 
+    padding: 2%;
+}
+
+.firstnameinput,.lastnameinput {
+    border-radius: 3px;  
+    border-width: 1px; 
+    padding: 7px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 112%; 
+
+}
+
+.EmailAddressinput, .companynameinput, .physicaladdressinput, .datainput {
+    border-radius: 3px; 
+    border-width: 1px; 
+    padding: 7px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    width: 589.15px; 
+}
+
+.dateinput {
+    border-radius: 3px; 
+    border-width: 1px; 
+    padding: 7px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    width: 400px; 
+}
+.dateinput1 {
+    border-radius: 3px; 
+    border-width: 1px; 
+    padding: 7px; 
+    margin-top: 5px; 
+    margin-left: 5px; 
+    margin-bottom: 5px;
+    width: 400px; 
+}
+
+.dateinput2 {
+    border-radius: 3px; 
+    border-width: 1px; 
+    padding: 7px; 
+    margin-top: 5px; 
+    margin-left: 5px; 
+    margin-bottom: 5px;
+    width: 400px; 
+}
