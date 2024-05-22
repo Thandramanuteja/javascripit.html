@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div-m {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        border: 2px solid orange;
+      }
+      .flex-continer {
+        display: flex;
+        justify-content: space-between;
+      }
+      .div-f {
+        width: 22%;
+        height: 150px;
+        border: 2px solid;
+      }
+
+      @media only screen and (max-width: 990px) {
+        .div-m {
+          width: 100px;
+          height: 100px;
+          background-color: violet;
+          border: 2px solid red;
+          border-radius: 50%;
+        }
+        .flex-continer {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+        }
+        .div-f {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-m"></div>
+    <div class="flex-continer">
+      <div class="div-f">1</div>
+      <div class="div-f">2</div>
+      <div class="div-f">3</div>
+      <div class="div-f">4</div>
+    </div>
+  </body>
+</html>
