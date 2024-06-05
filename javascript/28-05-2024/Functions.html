@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var a = 10;
+    var b = 20;
+    var c = a - b;
+    // console.log(c); // 30
+
+    function Addition(a, b) {
+      var c = a + b;
+      return c;
+    }
+    console.log(Addition(20, 30)); //50
+    console.log(Addition(10, 20)); //30
+    console.log(Addition(30, 40)); //70
+
+    function ArthMethicaOpertaions(a, b, i) {
+      var output = 0;
+      if (i == "+") {
+        output = a + b;
+      } else if (i == "-") {
+        output = a - b;
+      } else if (i == "*") {
+        output = a * b;
+      }
+      return output;
+    }
+  </script>
+</html>

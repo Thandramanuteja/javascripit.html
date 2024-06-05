@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="result"></div>
+</body>
+<script>
+    //input: 'hello react js world';
+    // outpu4: 'hELLo rEACt js wORLd';
+
+    // var input = "hello react js world";
+    // var ar = input.split(" ");
+    // var ouput = "";
+    // console.log(ar);
+    // for (var i = 0; i < ar.length; i++) {
+    //   //   console.log(ar[i]); //hello
+    //   var f = ar[i][0]; //h
+    //   var l = ar[i][ar[i].length - 1]; //o
+    //   var btween = ar[i].substr(1, ar[i].length - 2); // ell
+    //   var cup = btween.toUpperCase();
+    //   var finalStr = f + cup + l;
+    //   ouput += finalStr + " ";
+    // }
+    // console.log(ouput);
+
+   
+
+    // var ar = ['hello', 'react', 'js', 'world'];
+    //       var output = '';
+
+    //       for (var i = ar.length - 1; i >= 0; i--) { // Loop through the array in reverse order
+    //          var word = ar[i];
+    //         //   var capitalizedWord = word[0].toLowerCase() + word.substring(1); // Capitalize first letter and append the rest
+    //         var reversedWord = word.split('').reverse().join(''); 
+    //           output += reversedWord + ' '; // Append to output string
+    //      }
+
+    //       output = output.trim(); // To remove the trailing space
+    //       console.log(output); // Should print 'world Js React Hello'
+
+    //       document.getElementById("result").innerHTML ='<h1>' + output + '</h1>';
+
+
+     //input: 'hello react js world';
+    // output1: world js react hello
+    //otput2: olleh tcaer sj dlrow; olleh tcaer sj dlrow
+
+
+    var ar = ['hello', 'react', 'js', 'world'];
+    var output = '';
+
+    for (var i = 0; i < ar.length; i++) { 
+        var word = ar[i];
+        var reversedWord = word.split('').reverse().join(''); 
+        output += reversedWord + ' '; 
+    }
+
+    output = output.trim(); 
+    console.log(output); 
+
+    document.getElementById("result").innerHTML = '<h1>' + output + '</h1>';
+
+
+
+</script>
+
+</html>

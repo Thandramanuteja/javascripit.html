@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" />
+        <button onclick="generateTable()">Generate Table</button>
+    </div>
+    <div id="multiplicationTable"></div>
+    
+    <script>
+        function Table1(number, limit) {
+            for (let i = 1; i <= limit; i++) {
+                console.log(number + " x " + i + " = " + (number * i));
+            }
+        }
+
+        function generateTable() {
+            const number = document.getElementById("numberInput").value;
+            const limit = 10;
+
+            // Clear the previous table
+            document.getElementById("multiplicationTable").innerHTML = "";
+
+            // Generate and log the table
+            for (let i = 1; i <= limit; i++) {
+                let row = number + " x " + i + " = " + (number * i);
+                console.log(row);
+                document.getElementById("multiplicationTable").innerHTML += row + "<br>";
+            }
+        }
+    </script>
+</body>
+</html>

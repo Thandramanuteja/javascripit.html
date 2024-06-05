@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dom Manipulation...</h1>
+    <div id="multiValue"></div>
+    <input type="text" id="inputVal" value="hello react js" />
+    <!-- multipule: 200 -->
+  </body>
+  <script>
+    var a = 10;
+    var b = 20;
+    var c = a * b;
+    document.getElementById("multiValue").innerHTML =
+      "<p>Mutlipule:" + c + "</p>";
+    document.getElementById("inputVal").value = c;
+    // console.log(document.getElementById("inputVal").value);
+  </script>
+</html>
