@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="text" />
+    <button onclick="search()">search</button>
+</body>
+<script>
+    /**
+     * forEach
+     * filter
+     * map
+     * reduce
+     * find
+     * some
+     * every
+     * flat
+     * fill
+     * objet.keys
+     * object.values
+     * object.entries
+    */
+    var ar = ['Apple', 'Nokia', 'Smsung', 'MI', 'Lg'];
+    var nar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; //[6, 7, 8, 9, 10]
+    ar.forEach(function (e, i, a) {
+        console.log(e)
+    })
+    var filterArr = nar.filter(function (e, i, a) {
+        return e > 5
+    })
+
+    console.log('original arry...', nar)
+    console.log('filterArray arry...', filterArr)
+
+    function search() {
+        var ar = ['Apple', 'Nokia', 'Smsung', 'MI', 'Lg'];
+        var input = document.getElementById('text').value;
+        var filterar = ar.filter(function (e) {
+            return e.toLowerCase().includes(input.toLowerCase())
+        })
+        console.log(filterar)
+    }
+</script>
+
+</html>
