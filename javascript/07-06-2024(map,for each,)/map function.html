@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select>
+        <option></option>
+    </select>
+</body>
+<script>
+    /**
+     * Map
+    */
+    var ar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    var mapAr = ar.map(function (e) {
+        return e * 5
+    })
+
+    var mar = [
+        { name: 'Ram', sal: 1000, city: 'Banglore' },
+        { name: 'Krisna', sal: 2000, city: 'Hyderab' },
+        { name: 'Ravi', sal: 3000, city: 'Chennai' },
+        { name: 'Surya', sal: 4000, city: 'Pne' },
+        { name: 'China', sal: 5000, city: 'Delhi' },
+        { name: 'Venkatesh', sal: 6000, city: 'Nellore' },
+
+    ]
+    var gilterAr = mar.filter(function (items) {
+        return items.sal > 3000
+    })
+    var getNames = gilterAr.map(function (e) {
+        return e.name
+    })
+    console.log('gilterAr...', gilterAr)
+    console.log('gilterAr...', getNames)
+</script>
+
+</html>

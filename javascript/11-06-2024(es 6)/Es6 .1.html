@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /**
+     * let and const to declare the varibles;
+    */
+
+    // let and const are block scope, var is function scoping;
+    // let and const dosn't allow the redcleare the same varible and same  scope but var is allow any scope
+    // let and const has temperry dedzone and it will be hosted
+    // when you decleare the varible with const keyword we you shoud assign the value and once assign the value you cano't reassign the value
+    if (true) {
+        var city = 'Bangalore';
+        let phone = 287492385;
+        console.log(phone) //287492385
+        console.log(city) //Bangalore
+    }
+    console.log('outside scope==', city);//Bangalore
+    // console.log('outside scope==', phone);//error
+    var empData;
+    console.log(empData) // undefined
+    empData = 'Test abcs'
+
+
+
+    // console.log('empData..', empData1);//error
+    let empData1 //= 'React abc'
+    const emp = "ram";
+    // emp = "React"
+    console.log(empData1)//
+    const obj = { name: 'React', age: 6, id: 123 }
+    // obj ='sdfs'
+    obj.name = "Html";
+
+    console.log('<<<>>>', obj)//
+    // console.log(emp)//
+
+
+
+
+</script>
+
+</html>
