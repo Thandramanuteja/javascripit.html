@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <div id="result1"></div>
+    <div id="result2"></div>
+  </body>
+  <script>
+    /**
+     * reverse
+     * join
+     * isArray
+     * toString
+     * sort
+     * slice
+     * splice
+     */
+    var arr = ["Test", "Abc", "Apple", "Nokia", "Samsung"];
+    var arr1 = ["Orange", "Apple", "Banana"];
+    var str = "Hello";
+    console.log(arr); //Orange Apple Banana
+    console.log(arr.reverse());
+    console.log(arr1.join("**"));
+    console.log(Array.isArray(arr)); //
+    console.log(Array.isArray(str)); //flase
+    var cstr = arr.toString();
+    arr1.sort();
+    console.log(arr1.reverse());
+    console.log("Arr to string....", cstr);
+    var num = [8, 1, 9, 11, 6, 4, 10, 3, 2, 5];
+    num.sort(function (a, b) {
+      return b - a;
+    });
+    console.log(num);
+    var arr2 = ["Test", "Abc", "Apple", "Nokia", "Samsung"];
+    var sliceAr = arr2.slice(0, 3);
+    arr2.splice(2, 1, "data", "xyz");
+    console.log(arr2);
+    console.log("slice function....", sliceAr);
+
+    document.getElementById("result").innerHTML = '<h1>' + output + '</h1>';
+
+    //input: hello react js world
+    //output1: world js react hello // no forloop
+    //output2: olleh tcaer sj dlrow // single forloop
+
+    var ar = ['hello', 'react', 'js', 'world'];
+        var output = '';
+
+        for (var i = 0; i < ar.length; i++) {
+            var word = ar[i];
+            var reversedWord = '';
+            for (var j = word.length - 1; j >= 0; j--) {
+                reversedWord += word[j];
+            }
+            output += reversedWord + ' ';
+        }
+
+        output = output.trim(); // Remove the trailing space
+        console.log(output);
+
+        document.getElementById("result1").innerHTML = '<h1>' + output + '</h1>';
+
+
+
+
+        var ar = ['hello', 'react', 'js', 'world'];
+        
+        // Reverse the array and join the words with a space
+        var output = ar.reverse().join(' ');
+
+        console.log(output);
+
+        
+
+        document.getElementById("result2").innerHTML = '<h1>' + output + '</h1>';
+  </script>
+</html>

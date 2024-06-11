@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * lenght
+       * push
+       * unshift
+       * shift
+       * pop
+       * indexOf
+       * includes
+       *  concat
+       */
+      var arr = ["Test", "Abc", "Apple", "Nokia", "Samsung"];
+      console.log(arr.length);
+      arr.push("Lenvo"); // Adds new elements to the end of an array, and returns the new length
+      console.log(arr);
+      arr.unshift("Orange"); //Adds new elements to the beginning of an array, and returns the new length
+      console.log(arr);
+      var newArr = ["Bangalore", "Hyderbad", "Nellore", "Karanata"];
+      newArr.pop(); //Removes the last element of an array, and returns that element
+      newArr.shift(); //Removes the first element of an array, and returns that element
+      console.log("newList", newArr);
+      var ar1 = [1, 2, 3, 4];
+      console.log(arr.indexOf("Apple")); //3
+      console.log(arr.includes("Apples")); //true
+      var mergeArr = arr.concat(newArr, ar1);
+      console.log(mergeArr);
+    </script>
+  </body>
+</html>
