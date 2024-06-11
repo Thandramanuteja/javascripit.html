@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput" oninput="capitalizeInput()" />
+    
+</body>
+<script>
+    function capitalizeInput() {
+        var input = document.getElementById("textInput");
+        var text = input.value;
+        var words = text.split(' ');
+        var capitalizedText = '';
+        
+        for (var i = 0; i < words.length; i++) {
+            var word = words[i];
+            if (word.length > 0) {
+                var firstLetter = word[0].toUpperCase();
+                var middlePart = word.substring(1, word.length - 1);
+                var lastLetter = word.length > 1 ? word[word.length - 1].toUpperCase() : '';
+                capitalizedText += firstLetter + middlePart + lastLetter;
+            }
+            if (i < words.length - 1) {
+                capitalizedText += ' ';
+            }
+        }
+        
+        input.value = capitalizedText;
+    }
+</script>
+</html>

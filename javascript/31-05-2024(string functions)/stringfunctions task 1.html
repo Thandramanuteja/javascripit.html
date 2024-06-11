@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id = "result"></div>
+    
+</body>
+<script>
+
+// var input = "hello react js world";
+//     var ar = input.split(" ");
+//     var ouput = "";
+//     console.log(ar);
+//     for (var i = 0; i < ar.length; i++) {
+//       //   console.log(ar[i]); //hello
+//       var f = ar[i][0]; //h
+//       var l = ar[i][ar[i].length - 1]; //o
+//       var btween = ar[i].substr(1, ar[i].length - 2); // ell
+//       var cup = btween.toUpperCase();
+//       var finalStr = f + cup + l;
+//       ouput += finalStr + " ";
+//     }
+//     console.log(ouput);
+
+    // 'hello react js world';
+
+    // var input = "hello react js world";
+    // var ar = input.split(" ");
+    // var ouput = "";
+    // console.log(ar);
+    // for (var i = 0; i < ar.length; i++){
+    //     var f = ar[i][0];
+    //     var cup =f.toUpperCase();
+    //     output += f;
+    // }
+    // console.log(output);
+       
+        // TASK 1
+        // var ar = ['hello', 'react', 'js', 'world'];
+        //     var output = '';
+
+        //     for (var i = 0; i < ar.length; i++) {
+        //         var x = ar[i][0].toUpperCase(); // H
+        //         var y = ar[i].substr(1); // ello
+        //         var z = x + y; // Hello
+        //         output = output + z + ' ';
+        //     }
+
+        //     output = output.trim(); // To remove the trailing space
+        //     console.log(output); // Corrected variable name
+
+        //     document.getElementById("result").innerHTML ='<h1>' + output + '</h1>';
+
+
+
+            // TASK 2
+            // var ar = ['hello', 'react', 'js', 'world'];
+            // var output = '';
+
+            // for (var i = 0; i < ar.length; i++) {
+            //     var word = ar[i];
+            //     var x = word.substring(0, word.length - 1); // 'hell'
+                
+            //     var y = word[word.length - 1].toUpperCase(); // 'O'
+            //     var z = x + y; // 'hellO'
+            //     output += z + ' ';
+            // }
+
+            // output = output.trim(); // To remove the trailing space
+            // console.log(output);
+
+            // document.getElementById("result").innerHTML ='<h1>' + output + '</h1>';
+
+
+             // TASK 3
+        //      var ar = ['hello', 'react', 'js', 'world'];
+        //       var output = '';
+
+        //    for (var i = 0; i < ar.length; i++) {
+        //       var word = ar[i];
+        //       var firstLetter = word[0].toUpperCase(); // Capitalize first letter
+        //       var middlePart = word.substring(1, word.length - 1); // Middle part of the word
+        //       var lastLetter = word[word.length - 1].toUpperCase(); // Capitalize last letter
+
+        //        var transformedWord = firstLetter + middlePart + lastLetter; // Concatenate parts
+        //       output += transformedWord + ' '; // Append to output string
+        //  }
+
+        //   output = output.trim(); // To remove the trailing space
+        //   console.log(output); // Should print "HellO ReacT JS WorlD"
+
+        //   document.getElementById("result").innerHTML ='<h1>' + output + '</h1>';
+
+        //task 4
+
+        
+        var ar = ['hello', 'react', 'js', 'world'];
+          var output = '';
+
+          for (var i = ar.length - 1; i >= 0; i--) { // Loop through the array in reverse order
+             var word = ar[i];
+              var capitalizedWord = word[0].toLowerCase() + word.substring(1); // Capitalize first letter and append the rest
+              output += capitalizedWord + ' '; // Append to output string
+         }
+
+          output = output.trim(); // To remove the trailing space
+          console.log(output); // Should print 'world Js React Hello'
+
+          document.getElementById("result").innerHTML ='<h1>' + output + '</h1>';
+
+
+</script>
+</html>

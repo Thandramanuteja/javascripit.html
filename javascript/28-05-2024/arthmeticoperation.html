@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function ArthMethicaOpertaions(a, b, i) {
+      var output = 0;
+      if (i == "+") {
+        output = a + b;
+      } else if (i == "-") {
+        output = a - b;
+      } else if (i == "*") {
+        output = a * b;
+      }
+      return output;
+    }
+    console.log(ArthMethicaOpertaions(10, 20, "+")); //30
+    console.log(ArthMethicaOpertaions(10, 20, "-")); //-10
+    console.log(ArthMethicaOpertaions(10, 20, "*")); //200
+    console.log(ArthMethicaOpertaions(30, 100, "+")); //130
+    console.log(ArthMethicaOpertaions(30, 100, "++")); //
+  </script>
+</html>
