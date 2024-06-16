@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /**
+     * find
+     * some
+     * every
+     * object.keys, object.values, object.entires
+     * for in
+     * arrow
+    */
+    const ar = [5, 6, 9, 18, 20, 10, 15]
+    const fnd = ar.find(function (e) {
+        return e > 6
+    })
+    console.log(fnd) // 9
+
+
+    const some = ar.some(function (e) {
+        return e > 18
+    })
+
+    console.log('some>>>', some) //true
+    
+
+    const every = ar.every(function (e) {
+        return e >= 5
+    })
+
+    console.log('every>>>', every)
+    const obj = { name: 'Ram', age: 22, city: 'Nellore', pinCode: '1234', id: 123, state: 'Ap', phone: 'Apple' }
+
+    const keys = Object.keys(obj);
+    const values = Object.values(obj);
+    const entries = Object.entries(obj);
+    console.log('keys>>>', keys)
+    console.log("values>>>", values)
+    console.log("values>>>", entries)
+
+    console.log(obj.name) //Ram
+    for (let key in obj) {
+        console.log(key, '<<>>', obj[key]) //name, age,
+
+    }
+
+</script>
+
+</html>

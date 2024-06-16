@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Text1: <input type="text" onkeyup="text1()" id="text1" /> Text2:
+    <input type="text" onkeyup="text2()" id="text2" />
+  </body>
+  <script>
+    function text1() {
+      var t1 = (document.getElementById("text1").value = document
+        .getElementById("text1")
+        .value.toUpperCase());
+      document.getElementById("text2").value = t1.toUpperCase();
+    }
+
+    function text2() {
+      var t2 = (document.getElementById("text2").value = document
+        .getElementById("text2")
+        .value.toUpperCase());
+      document.getElementById("text1").value = t2.toUpperCase();
+    }
+  </script>
+</html>

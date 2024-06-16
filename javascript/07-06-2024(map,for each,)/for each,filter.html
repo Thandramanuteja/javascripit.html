@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>for each</title>
 </head>
 
 <body>
@@ -28,11 +28,13 @@
     */
     var ar = ['Apple', 'Nokia', 'Smsung', 'MI', 'Lg'];
     var nar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; //[6, 7, 8, 9, 10]
-    ar.forEach(function (e, i, a) {
-        console.log(e)
+    ar.forEach(function (e, i, a) {            // calls a function for each array element
+        console.log(e)                         // for each will return the undefind
     })
+
+
     var filterArr = nar.filter(function (e, i, a) {
-        return e > 5
+        return e > 2
     })
 
     console.log('original arry...', nar)
@@ -46,6 +48,6 @@
         })
         console.log(filterar)
     }
-</script>
+</script>   
 
 </html>
