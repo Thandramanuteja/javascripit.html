@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map function</title>
+</head>
+
+<body>
+    <select>
+        <option></option>
+    </select>
+</body>
+<script>
+    /**
+     * Map
+    */
+    var ar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    var mapAr = ar.map(function (e) {    //creates a new array with the result of calling 
+        return e * 2                     //   a function for each array element
+        
+    })
+
+    console.log("orginal array>>" ,ar)
+    console.log("mapar array>>" ,mapAr)
+
+    var mar = [
+        { name: 'Ram', sal: 1000, city: 'Banglore' ,pincode: '524315'},
+        { name: 'Krisna', sal: 2000, city: 'Hyderab',pincode: '524314' },
+        { name: 'Ravi', sal: 3000, city: 'Chennai',pincode: '524311' },
+        { name: 'Surya', sal: 4000, city: 'Pne',pincode: '524325' },
+        { name: 'China', sal: 5000, city: 'Delhi' ,pincode: '524348'},
+        { name: 'Venkatesh', sal: 6000, city: 'Nellore' ,pincode: '524378'},
+
+    ]
+    var gilterAr = mar.filter(function (items) {
+        return items.sal > 3000
+    })
+    var getNames = gilterAr.map(function (e) {
+        return e.name
+    })
+    var getpincode = gilterAr.map(function(e){
+        return e.pincode
+    })
+    console.log('gilterAr...', gilterAr)
+    console.log('gilterAr...', getNames)
+    console.log('gilterAr...', getpincode)
+</script>
+
+</html>

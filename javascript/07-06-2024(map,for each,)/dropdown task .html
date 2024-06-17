@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>countries2</title>
+<style>
+    
+    select {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+   
+    @media screen and (max-width: 600px) {
+        select {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<select id="countries" onchange="populateStates()">
+    <option value="">Select a Country</option>
+    <option value="India">India</option>
+    <option value="Malaysia">Malaysia</option>
+    <option value="Australia">Australia</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Brazil">Brazil</option>
+</select>
+
+
+<select id="stateSelect" style="display: none;" onchange="populateDistricts()">
+    <option value="">Select a State</option>
+   
+</select>
+
+
+<select id="districtSelect" style="display: none;" onchange="populateMandals()">
+    <option value="">Select a District</option>
+    
+</select>
+
+
+<select id="mandalSelect" style="display: none;" onchange="populateVillage()">
+    <option value="">Select a Mandal</option>
+    
+</select>
+
+
+<select id="villageSelect" style="display: none;">
+    <option value="">Select a Village</option>
+    
+</select>
+
+<script>
+var districtData = {
+    "Andhra Pradesh": [ "Nellore","Visakhapatnam","Guntur","Anantapur","Chittoor"],
+    "Arunachal Pradesh": ["Tawang", "West Kameng", "East Kameng", "Lower Subansiri", "Lohit", "Namsai" ],
+    
+};
+
+var mandalData = {
+    "Nellore": ["Kavali", "Gudur", " Sullurpeta", "Naidupet", "Kovur", "Buchireddipalem", 'Udayagiri'],
+    "Visakhapatnam": ["Mandal A", "Mandal B", "Mandal C"],
+    "Guntur": ["Mandal A", "Mandal B", "Mandal C"],
+    "Anantapur": ["Mandal A", "Mandal B", "Mandal C"],
+    "Chittoor": ["Mandal A", "Mandal B", "Mandal C"],
+    
+    
+};
+
+var villageData = {
+    "Kavali": ["Village A", "Village B", "Village C"],
+    "Gudur": ["Village A", "Village B", "Village C"],
+    "Sullurpeta": ["Village A", "Village B", "Village C"],
+    
+};
+
+function populateStates() {
+    var countrySelect = document.getElementById("countries");
+    var stateSelect = document.getElementById("stateSelect");
+    var selectedCountry = countrySelect.value;
+
+    if (selectedCountry) {
+        stateSelect.style.display = "block";
+        stateSelect.innerHTML = '<option value="">Select a State</option>';
+        
+        var states = ["Andhra Pradesh", "Arunachal Pradesh", "Assam"]; 
+        states.forEach(function(state) {
+            var option = document.createElement("option");
+            option.text = state;
+            option.value = state;
+            stateSelect.add(option);
+        });
+    } else {
+        stateSelect.style.display = "none";
+    }
+}
+
+function populateDistricts() {
+    var stateSelect = document.getElementById("stateSelect");
+    var districtSelect = document.getElementById("districtSelect");
+    var selectedState = stateSelect.value;
+    
+    if (selectedState) {
+        districtSelect.style.display = "block";
+        districtSelect.innerHTML = '<option value="">Select a District</option>';
+        districtData[selectedState].forEach(function(district) {
+            var option = document.createElement("option");
+            option.text = district;
+            option.value = district;
+            districtSelect.add(option);
+        });
+    } else {
+        districtSelect.style.display = "none";
+    }
+}
+
+function populateMandals() {
+    var districtSelect = document.getElementById("districtSelect");
+    var mandalSelect = document.getElementById("mandalSelect");
+    var selectedDistrict = districtSelect.value;
+    
+    if (selectedDistrict) {
+        mandalSelect.style.display = "block";
+        mandalSelect.innerHTML = '<option value="">Select a Mandal</option>';
+        mandalData[selectedDistrict].forEach(function(mandal) {
+            var option = document.createElement("option");
+            option.text = mandal;
+            option.value = mandal;
+            mandalSelect.add(option);
+        });
+    } else {
+        mandalSelect.style.display = "none";
+    }
+}
+
+function populateVillage() {
+    var mandalSelect = document.getElementById("mandalSelect");
+    var villageSelect = document.getElementById("villageSelect");
+    var selectedMandal = mandalSelect.value;
+    
+    if (selectedMandal) {
+        villageSelect.style.display = "block";
+        villageSelect.innerHTML = '<option value="">Select a Village</option>';
+        villageData[selectedMandal].forEach(function(village) {
+            var option = document.createElement("option");
+            option.text = village;
+            option.value = village;
+            villageSelect.add(option);
+        });
+    } else {
+        villageSelect.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

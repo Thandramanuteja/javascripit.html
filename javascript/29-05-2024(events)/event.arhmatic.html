@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <input type="number" id="input1" />*
+    <input type="number" id="input2" />
+    <button onclick="addOperation()">Clikc</button>
+    <div id="addResult"></div>
+  </body>
+  <script>
+    function addOperation() {
+      var input1 = document.getElementById("input1").value;
+      var input2 = document.getElementById("input2").value;
+      document.getElementById("addResult").innerHTML =
+        Number(input1) * Number(input2);
+    }
+
+    //test == tset // fasle
+    //aba ==aba //true
+  </script>
+</html>

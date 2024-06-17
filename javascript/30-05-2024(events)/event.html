@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button ondblclick="dbClick()">click</button>
+    Keyup:<input type="text" onkeyup="keyup()" /> Key down:<input
+      type="text"
+      onkeydown="keyDown()"
+    />
+  </body>
+  <script>
+    function dbClick() {
+      console.log("double click event handler...");
+    }
+    function keyup() {
+      console.log("key up event fireing...");
+    }
+    function keyDown() {
+      console.log("key dwon event fireing...");
+    }
+  </script>
+</html>

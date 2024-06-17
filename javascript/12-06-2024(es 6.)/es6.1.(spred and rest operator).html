@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /**
+     * spred and rest operators (...)
+     * shall and depp copy (JSON.stringfy, JSON.parse)
+    */
+    const obj1 = { name: 'Ram', age: 22, city: 'Hyderbad', address: { pinCode: 1234, landMark: 'bustand' } };
+    const obj2 = { ...obj1 };
+    obj2.name = "Kiran"
+
+    console.log(obj1) //
+    console.log(obj2)
+    const str = 'Hello';
+    const ar = [...str];
+    console.log(ar)
+
+    const obj3 = { name: 'Ram', age: 22, city: 'Hyderbad', address: { pinCode: 1234, landMark: 'bustand' } };
+    const obj4 = JSON.parse(JSON.stringify(obj3));
+    obj4.address.landMark = "Temaple"
+    console.log("obj3>>>>", obj3)
+    console.log("obj4>>>", obj4)
+</script>
+
+</html>

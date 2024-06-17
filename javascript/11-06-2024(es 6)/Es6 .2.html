@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /**
+     * destrcutring and template litteral
+    */
+    const obj = { course: 'React', age: 12, id: 900, city: 'Hyderbad', address: { pinCode: 543612 } };
+    const { course: courseName, age, city, address: { pinCode } } = obj
+    console.log(courseName)
+    console.log(pinCode)
+
+    // const ar = [1, 2, 3, 4, 5, 6];
+    // const [a, b, c] = ar
+
+    // console.log(obj['name'])
+    // console.log(obj.city)
+    const name = "React";
+    const phone = "1234343";
+    //output: My name is Reacct and phone number is 1234343
+    const output = `My name is ${name} and phone number is  ${phone}`;
+    console.log('output>>>>', output)
+
+</script>
+
+</html>
