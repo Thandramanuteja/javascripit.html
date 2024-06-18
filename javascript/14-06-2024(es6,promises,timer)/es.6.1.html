@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // function addTowValues(a,b){        (normally we write like this)
+    //     return a+b
+    // }
+    // const addition = (a,b) => a+b   (arrow function add the elemnts)
+    /**                             1.arrow function is single line fuction we don't required return option
+     * arrow                        2.arrow won't be hosted
+     *                              3.Arrow functions doen't have a this key word
+     *                              4.Arrow functions do not have their own arguments do not return the values
+    */
+    console.log(addTowValues(10, 20, 'hi').func())
+    function addTowValues(a, b) {
+        // console.log('arguments>>>', arguments.length)
+        this.name = "Hello"
+        const obj = {
+            name: 'raj',
+            age: 25,
+            func: function () {
+                console.log(this.name, '<<<age is>>>', this.age)
+            }
+
+        }
+        return obj
+    }
+
+
+
+    // const addition = (a, b) => a + b
+    const addition = (a, b, c) => {
+        // console.log('arguments>>>', arguments)
+        this.name = "Hello"
+        const obj = {
+            name: 'raj',
+            age: 25,
+            func: function () {
+                const obj2 = {}
+                console.log(this.name, '<<<age is>>>', this.age)
+            }
+
+        }
+        return obj
+    }
+    console.log(addition(90, 10, 101).func())
+</script>
+
+</html>
