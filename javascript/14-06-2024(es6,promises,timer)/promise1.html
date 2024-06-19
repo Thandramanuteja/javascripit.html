@@ -12,10 +12,10 @@
 </body>
 <script>
     /**
-     * all
-     * allsetelled
-     * race 
-     * any
+     * all  : all means which one resovle first  and print the output or reject or resole
+     * allsetelled :  allsetelled means printing all values and with reason and status
+     * race    : race means which first resolve or reject taking first aand print output 
+     * any : any taking only resolve function and print the output
     */
     const promis1 = (input) => new Promise((reslove, reject) => {
         if (input > 10) {
@@ -45,8 +45,8 @@
     })
     const p3 = new Promise((reslove, reject) => {
         setTimeout(() => {
-            reject('promse 3 is rejecting...')
-            // reslove('promse 3 is resloveing...')
+            // reject('promse 3 is rejecting...')
+            reslove('promse 3 is resloveing...')
 
         }, 1000)
     })
