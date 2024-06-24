@@ -1,13 +1,13 @@
 import { useState } from "react"
 function StatesEvents() {
-    const [name, setName] = useState('React')
-    const [city, setCity] = useState("Bangalore");
+    const [name, setName] = useState('hi')
+    const [city, setCity] = useState("andhra pradesh");
     const [emp, setEmp] = useState({ name: 'React', age: 10, city: 'usa' })
 
     const clicAction = () => {
         // city = 'Hyderbad';
-        setName('Javascript')
-        setCity('Hyderbad')
+        setName('hello')
+        setCity('nellore')
         // console.log(name, city)
     }
     return (
