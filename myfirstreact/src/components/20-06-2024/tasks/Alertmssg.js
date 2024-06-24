@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./style.css"
 
-function AddToList() {
+
+function Alertmssg() {
     const [userList, setUserList] = useState([]);
     const [userName, setUserName] = useState("");
 
@@ -10,7 +10,12 @@ function AddToList() {
         setUserName(value);
     }
 
-    const AddToDoList = () => {
+    const Alertmssg = () => {
+        if (userName.trim() === "") {
+            alert("Please enter a name before adding to the list.");
+            return; // Exit the function if userName is empty
+        }
+
         const newList = [...userList];
         newList.push(userName);
         setUserList(newList);
@@ -19,11 +24,11 @@ function AddToList() {
 
     return (
         <div>
-            <h2 className="list">AddToList</h2>
+            <h2 className="Alert">Alertmssg</h2>
             <div>
                 <label>Name:</label>
                 <input type="text" onChange={InputFormHandler} value={userName} />
-                <button onClick={AddToDoList} style={{ backgroundColor: 'blue', fontSize: "20px" }}>Add</button>
+                <button onClick={Alertmssg} style={{ backgroundColor: 'red', fontSize: "20px" }}>Add</button>
                 <table>
                     <thead>
                         <tr>
@@ -47,4 +52,4 @@ function AddToList() {
     )
 }
 
-export default AddToList;
+export default Alertmssg;
