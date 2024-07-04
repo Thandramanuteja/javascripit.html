@@ -31,7 +31,7 @@ function Deleteopt() {
 
         setUserList([...userList, newUser]);
         setUserName("");
-        setIdCounter(idCounter + 1); // Increment idCounter for next item
+        setIdCounter(idCounter + 1);
     }
 
     const handleDelete = (id) => {
