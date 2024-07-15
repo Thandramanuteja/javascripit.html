@@ -12,4 +12,5 @@ function RectForgment(props) {
         </>
     )
 }
-export default RectForgment
+export default RectForgment;
+

@@ -13,6 +13,7 @@ import ComponentA from './components/24-06-2024/ComponentA';
 import Conditionempdata from './components/24-06-2024/task1/Conditionempdata';
 import CondationAlRendering from './components/24-06-2024/CondationAlRendering';
 import RectForgment from './components/26-06-2024/RectForgment';
+import MyFormComponent from './components/tasks/MyFormComponent';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
        {/* <Counter/> */}
         {/* <ListItems/>  */}
        {/* <InputHandler/> */}
-       <AddToList/> 
+       {/* <AddToList/>  */}
        {/* <Alertmssg/> */} 
        {/* <Deleteopt/> */}
 
@@ -42,7 +43,9 @@ function App() {
             <li>4</li>
           </ul>
         </div>
-      </RectForgment> */}
+      </RectForgment>
+       */}
+       <MyFormComponent/>
     </div>
   )
 }
