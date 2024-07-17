@@ -14,6 +14,8 @@ import Conditionempdata from './components/24-06-2024/task1/Conditionempdata';
 import CondationAlRendering from './components/24-06-2024/CondationAlRendering';
 import RectForgment from './components/26-06-2024/RectForgment';
 import MyFormComponent from './components/tasks/MyFormComponent';
+import UseEffectHook from './components/17-07-2024(use effects)/UseEffectHook';
+import UseEffectApiCall from './components/17-07-2024(use effects)/UseEffectApiCall';
 
 
 function App() {
@@ -45,7 +47,9 @@ function App() {
         </div>
       </RectForgment>
        */}
-       <MyFormComponent/>
+       {/* <MyFormComponent/> */}
+       {/* <UseEffectHook/> */}
+       <UseEffectApiCall/>
     </div>
   )
 }
