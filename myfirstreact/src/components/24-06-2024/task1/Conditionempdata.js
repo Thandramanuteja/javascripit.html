@@ -266,7 +266,7 @@ function Conditionempdata() {
         placeholder="Search by name, username, email, phone, or website..."
         value={searchTerm}
         onChange={handleSearchChange}
-        className="search-input" 
+        className="search-input" style={{width :'1000px', padding:'10px',borderRadius:'20px'}}
       />
       <table className="employee-table"> 
         <thead>
@@ -290,7 +290,7 @@ function Conditionempdata() {
               <td>{employee.email}</td>
               <td>{employee.phone}</td>
               <td>{employee.website}</td>
-              <td><button onClick={() => handleDelete(employee.id)}>Delete</button></td>
+              <td><button onClick={() => handleDelete(employee.id)}>Delete</button> <button>edit</button></td>
             </tr>
           ))}
         </tbody>
