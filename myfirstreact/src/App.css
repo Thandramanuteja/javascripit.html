@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+li{
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+li:hover{
+  background-color:red
+  
+}
+h1{
+  background-color: green;
+  border: 1px solid;
+  border-radius: 20px;
+  /* align-items: center; */
+  padding: 10px;
+  padding-left: 500px;
+  
+}
+
