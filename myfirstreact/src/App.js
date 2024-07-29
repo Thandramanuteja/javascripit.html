@@ -20,6 +20,14 @@ import ApiSearchData from './components/18-07-2024(api search data)/ApiSearchDat
 import ComponentA from './components/19-07-2024(contax hook)/ComponentA';
 
 import { ContextApp1,ContextApp2 } from './components/19-07-2024(contax hook)/ContextApp';
+import MemoHooks from './components/22-07-2024(memohooks)/MemoHooks';
+import About from './components/23-07-2024(router)/About';
+import Countact from './components/23-07-2024(router)/Contact';
+import Home from './components/23-07-2024(router)/Home';
+import Prodcts from './components/23-07-2024(router)/Products';
+import CounterRedux from './components/Counter-24-07-2024/CounterRedux';
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
@@ -28,8 +36,8 @@ function App() {
     { name: 'Siva', age: 25, city: 'Pune', id: 100 }]
   return(
     <div>
-       <ContextApp1.Provider value={empList}>
-       <ContextApp2.Provider value={'Hello World'}>
+       {/* <ContextApp1.Provider value={empList}>
+       <ContextApp2.Provider value={'Hello World'}> */}
        {/* <Functioncm/> */}
        {/* <StateEvents/> */}
        {/* <Counter/> */}
@@ -54,16 +62,40 @@ function App() {
             <li>4</li>
           </ul>
         </div>
-      </RectForgment>
-       */}
+      </RectForgment> */}
+      
        {/* <MyFormComponent/> */}
        {/* <UseEffectHook/> */}
        {/* <UseEffectApiCall/> */}
        {/* <ApiSearchData/> */}
        
-       <ComponentA/>
+       {/* <ComponentA/>
        </ContextApp2.Provider>
-       </ContextApp1.Provider>
+       </ContextApp1.Provider> */}
+
+       {/* <MemoHooks/> */}
+
+        {/* 23-07-2024 */}
+      <BrowserRouter>
+        <div>
+          <ol>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'/About'}>About us</Link></li>
+          <li><Link to={'/Contact'}>Contact us</Link></li>
+          <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
+          </ol>
+          {/* <Outlet /> */}
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Countact />} />
+          <Route path="/Prodcts" element={<Prodcts />} />
+        </Routes>
+      </BrowserRouter>
+
+      <CounterRedux/>
+
        
     </div>
   )
