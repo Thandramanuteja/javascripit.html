@@ -18,7 +18,7 @@
     */
     var ar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     var mapAr = ar.map(function (e) {    //creates a new array with the result of calling 
-        return e * 2                     //   a function for each array element
+        return e * 2                   //   a function for each array element
         
     })
 
@@ -26,16 +26,16 @@
     console.log("mapar array>>" ,mapAr)
 
     var mar = [
-        { name: 'Ram', sal: 1000, city: 'Banglore' ,pincode: '524315'},
-        { name: 'Krisna', sal: 2000, city: 'Hyderab',pincode: '524314' },
-        { name: 'Ravi', sal: 3000, city: 'Chennai',pincode: '524311' },
-        { name: 'Surya', sal: 4000, city: 'Pne',pincode: '524325' },
-        { name: 'China', sal: 5000, city: 'Delhi' ,pincode: '524348'},
-        { name: 'Venkatesh', sal: 6000, city: 'Nellore' ,pincode: '524378'},
+        { name: 'Ram', sal: 1000, city: 'Banglore' ,pincode: '524315',address:'kothapalemm'},
+        { name: 'Krisna', sal: 2000, city: 'Hyderab',pincode: '524314' ,address:'delhi'},
+        { name: 'Ravi', sal: 3000, city: 'Chennai',pincode: '524311' ,address:'bsr nagar'},
+        { name: 'Surya', sal: 4000, city: 'Pne',pincode: '524325' ,address:'allure'},
+        { name: 'China', sal: 5000, city: 'Delhi' ,pincode: '524348',address:'purini'},
+        { name: 'Venkatesh', sal: 6000, city: 'Nellore' ,pincode: '524378',address:'nellore'},
 
     ]
     var gilterAr = mar.filter(function (items) {
-        return items.sal > 3000
+        return items.sal > 500
     })
     var getNames = gilterAr.map(function (e) {
         return e.name
@@ -43,9 +43,13 @@
     var getpincode = gilterAr.map(function(e){
         return e.pincode
     })
+    var getaddress = gilterAr.map(function(e){
+        return e.address
+    })
     console.log('gilterAr...', gilterAr)
     console.log('gilterAr...', getNames)
     console.log('gilterAr...', getpincode)
+    console.log('gilterar...',getaddress)
 </script>
 
 </html>

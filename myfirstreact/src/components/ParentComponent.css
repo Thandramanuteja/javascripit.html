@@ -1,0 +1,41 @@
+/* Container styling for positioning */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    height: 100vh; /* Takes full screen height */
+    position: relative;
+  }
+  
+  /* Styling for the logo on the left */
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  /* Input container with the input at the top-right corner */
+  .input-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right; /* Aligns text to the right */
+  }
+  
+  /* Input field styling */
+  .input-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px; /* Set a fixed width */
+    max-width: 100%; /* Ensures it doesn't grow beyond its container */
+    box-sizing: border-box; /* Ensures padding does not affect the overall width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Ensuring the input box does not resize on different devices */
+  .input-container input {
+    resize: none; /* Prevent manual resizing */
+    outline: none;
+  }
+  

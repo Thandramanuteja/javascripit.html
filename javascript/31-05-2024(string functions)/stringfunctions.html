@@ -21,13 +21,25 @@
     // console.log(str+'and'+name)
     console.log(merge);
 
-    console.log("index value>>", str.indexOf("r")); // indexof means write starting word
-    console.log("index value>>", str.lastIndexOf("a")); // lastindexof means write last word
+    console.log("index value>>", str.indexOf("H")); // indexof means write starting word
+    console.log("index value>>", str.lastIndexOf("c")); // lastindexof means write last word
 
-    console.log("inculdes>>", str.includes("H"));  // includes means true or false
+    console.log("inculdes>>", str.includes("e"));  // includes means true or false
+
+    let hi = "manuteja thandra"
+    console.log(hi.toUpperCase());
+    console.log(hi.toLowerCase());
+
 
     console.log(str.toUpperCase());
     console.log(str.toLowerCase());
+
+    let re = "0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3";
+    let ree =re.replace("0","1");
+    console.log("re,,,,,,,,,,",ree);
+
+    let allree = re.replaceAll("1","2");
+    console.log("allree,,,,,",allree);
 
     var rstr = "hello abc hello world abc test react js, angular js, vew js";
     var newStr = rstr.replace("hello", "react");
@@ -39,7 +51,7 @@
     var ear = rstr.split(" ");
     console.log(ear);
 
-    var subss = rstr.substr(6, 9);
+    var subss = rstr.substr(5, 9);
     console.log("sub string...", subss);
 
     var abc = "      Bangalore      ";

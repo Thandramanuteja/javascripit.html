@@ -5,13 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .table-t {
-        border-collapse: collapse;
-      }
-      td,
-      th {
-        border: 1px solid orange;
-      }
+        /* Styling for the table */
+        .table-t {
+            width: 100%;
+            border-collapse: collapse; /* Ensures no gaps between borders */
+        }
+
+        /* Styling for table headers */
+        .table-t th {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd; /* Add borders to the table cells */
+        }
+
+        /* Styling for table cells */
+        .table-t td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        /* Zebra striping for rows */
+        .table-t tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect for rows */
+        .table-t tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Styling for the table header text */
+        .table-t th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Optional: Add responsive styling */
+        @media (max-width: 600px) {
+            .table-t {
+                font-size: 12px; /* Smaller font on smaller screens */
+            }
+        }
     </style>
   </head>
   <body>
@@ -24,9 +60,11 @@
       <li>Apple</li>
       <li>Mi</li>
     </ul>
-    <ul>
-      <li>hello</li>
-    </ul>
+    <ol>
+      <li>bhbj</li>
+      <li>sxbcb</li>
+      <li>sxbsb</li>
+    </ol>
 
     <ol>
       <li>Samsung</li>
@@ -35,7 +73,7 @@
       <li>Mi</li>
     </ol>
 
-    <table class="table-t">
+    <!-- <table class="table-t">
       <thead>
         <tr>
           <th>First Name</th>
@@ -59,6 +97,32 @@
           <td>983838390</td>
         </tr>
       </tbody>
+    </table> -->
+
+    <table class="table-t">
+      <thead>
+        <tr>
+          <th>s.n.o</th>
+          <th>name</th>
+          <th>address</th>
+          <th>number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>manu</td>
+          <td>nellore</td>
+          <td>45945+5+655</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>hello</td>
+          <td>allur</td>
+          <td>6485+4+</td>
+        </tr>
+      </tbody>
     </table>
+
   </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* Just for scrolling */
+        }
+
+        .static-box {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .relative-box {
+            position: relative;
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 20px;
+            top: 20px; /* Moves the box down */
+        }
+
+        .container {
+            position: relative;
+            height: 200px; /* Height for the container */
+            margin: 20px;
+            background-color: lightgreen;
+        }
+
+        .absolute-box {
+            position: absolute;
+            background-color: lightyellow;
+            padding: 10px;
+            top: 20px; /* Positioned 20px from the top of the container */
+            left: 30px; /* Positioned 30px from the left of the container */
+        }
+
+        .fixed-box {
+            position: fixed;
+            background-color: lightpink;
+            padding: 10px;
+            top: 10px; /* Fixed 10px from the top of the viewport */
+            right: 10px; /* Fixed 10px from the right of the viewport */
+        }
+
+        .sticky-box {
+            position: sticky;
+            background-color: lightgray;
+            padding: 10px;
+            top: 0; /* Becomes fixed at the top of its container */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="static-box">Static Positioning</div>
+    <div class="relative-box">Relative Positioning</div>
+
+    <div class="container">
+        <div class="absolute-box">Absolute Positioning</div>
+        <p>This is the content of the container. Scroll down to see the sticky box.</p>
+    </div>
+
+    <div class="fixed-box">Fixed Positioning</div>
+
+    <div class="sticky-box">Sticky Positioning</div>
+    <p>Scroll down to see the sticky effect.</p>
+    <p style="margin-top: 1500px;">End of the document.</p>
+
+</body>
+</html>

@@ -22,13 +22,13 @@
      */
     var arr = ["Test", "Abc", "Apple", "Nokia", "Samsung"];
     var arr1 = ["Orange", "Apple", "Banana"];
-    var str = "Hello";
+    var str = 'Hello';
 
     console.log(arr); 
 
     console.log(arr.reverse());//reverse the order of the element in an array
 
-    console.log(arr1.join("**"));// joins all elements of an array into a string
+    console.log(arr1.join("* "));// joins all elements of an array into a string
 
     console.log(Array.isArray(arr)); //check whether an object ia an array
     console.log(Array.isArray(str)); //flase
@@ -36,9 +36,11 @@
     var cstr = arr.toString();
     console.log("Arr to string....", cstr);//  
 
-    arr1.sort();
-    console.log(arr1);              // sorts the elements of an array(return order wise like A to Z)
-    console.log(arr1.reverse());
+
+    var arr0 = ["q","w","a","c","b","d","e","h","f","z"];
+    var arr0 = arr0.sort();
+    console.log(arr0);              // sorts the elements of an array(return order wise like A to Z)
+    console.log(arr0.reverse());
     
     var num = [8, 1, 9, 11, 6, 4, 10, 3, 2, 5];
     num.sort(function (a, b) {
@@ -51,7 +53,7 @@
     var sliceAr = arr2.slice(0, 3);
     console.log("slice function....", sliceAr);//selects a part of an array, and returns the new array
 
-    arr2.splice(2, 0, "data", "xyz");
+    arr2.splice(1, 0, "data", "xyz");
     console.log(arr2);                     // adds or removes array elements
 
     

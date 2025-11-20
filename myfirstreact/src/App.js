@@ -29,6 +29,10 @@ import CounterRedux from './components/Counter-24-07-2024/CounterRedux';
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import Loginpage from './components/Loginpage';
+
+import ParentComponent from './components/ParentComponent';
+
 
 function App() {
   const empList = [{ name: 'Sam', age: 28, city: 'Hyderbad', id: 100 },
@@ -94,7 +98,12 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-      <CounterRedux/>
+      {/* <CounterRedux/> */}
+
+      {/* <Loginpage/> */}
+      {/* <ParentComponent/> */}
+
+      
 
        
     </div>
