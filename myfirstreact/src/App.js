@@ -32,6 +32,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Loginpage from './components/Loginpage';
 
 import ParentComponent from './components/ParentComponent';
+import Fetchtheapi from './Fetchtheapi';
 
 
 function App() {
@@ -102,7 +103,10 @@ function App() {
 
       {/* <Loginpage/> */}
       {/* <ParentComponent/> */}
-
+      
+       <div>
+      <Fetchtheapi />
+    </div>
       
 
        
