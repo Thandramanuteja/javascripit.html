@@ -33,8 +33,8 @@ import Loginpage from './components/Loginpage';
 
 import ParentComponent from './components/ParentComponent';
 import Fetchtheapi from './Fetchtheapi';
-
-
+import LocalCounter from './components/Counter-24-07-2024/LocalCounter';
+import DynamicTextBoxes from './components/tasks/DynamicTextBoxes';
 function App() {
   const empList = [{ name: 'Sam', age: 28, city: 'Hyderbad', id: 100 },
     { name: 'Ram', age: 24, city: 'Bangalore', id: 100 },
@@ -105,7 +105,9 @@ function App() {
       {/* <ParentComponent/> */}
       
        <div>
-      <Fetchtheapi />
+      {/* <Fetchtheapi /> */}
+      {/* <LocalCounter/> */}
+      <DynamicTextBoxes/>
     </div>
       
 

@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-       div {
-        background-color: green !important ;
-        color: purple !important ;
-        margin-top: 10px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colors</title>
 
-       #div1 {
-        background-color: tomato;
-        color: white;
-        margin-top: 10px;
-      } 
+  <style>
+    .color-row {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 18px;
+    }
 
-      .div-class {
-        background-color: blue;
-        color: brown;
-        margin-top: 10px;
-      } 
-    </style>
-  </head>
-  <body>
-    <div id="div1" class="div-class1" style="background: gray; color: black">
-      React Js0
-    </div>
-    <div id="div1" class="div-class">React Js1</div>
-    <div id="div1" class="div-class">React Js2</div>
-    <div id="div1" class="div-class">React Js3</div>
-  </body>
+    .color-box {
+      width: 60px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+    .green { background-color: green; }
+    .yellow { background-color: yellow; }
+    .pink { background-color: pink; }
+    .orange { background-color: orange; }
+  </style>
+</head>
+
+<body>
+
+  <div class="color-row">
+    <div class="color-box red"></div>
+    <span>Red</span>
+  </div>
+
+  <div class="color-row">
+    <div class="color-box blue"></div>
+    <span>Blue</span>
+  </div>
+
+  <div class="color-row">
+    <div class="color-box green"></div>
+    <span>Green</span>
+  </div>
+
+  <div class="color-row">
+    <div class="color-box yellow"></div>
+    <span>Yellow</span>
+  </div>
+
+  <div class="color-row">
+    <div class="color-box pink"></div>
+    <span>Pink</span>
+  </div>
+
+  <div class="color-row">
+    <div class="color-box orange"></div>
+    <span>Orange</span> <button>click</button>
+  </div>
+
+</body>
 </html>
