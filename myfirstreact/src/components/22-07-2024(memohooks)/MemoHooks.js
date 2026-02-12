@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from "react";
 // import { calcutions } from "./Factor";
 function MemoHooks() {
